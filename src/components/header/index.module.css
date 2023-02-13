@@ -1,0 +1,50 @@
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header .logo {
+  width: 220px;
+  height: 60px;
+  margin-left: 50px;
+}
+@media (max-width: 768px) {
+  .header .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .header > div {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.header > div .sing {
+  width: 220px;
+  height: 44px;
+}
+@media (max-width: 768px) {
+  .header > div .sing {
+    width: 100px;
+    height: auto;
+  }
+}
+.header > div .menu {
+  width: 60px;
+  height: 46px;
+  margin: 0 50px;
+}
+@media (max-width: 768px) {
+  .header > div .menu {
+    width: 30px;
+    height: auto;
+    margin: 0 20px;
+  }
+}

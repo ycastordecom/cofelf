@@ -14,25 +14,27 @@
         height: 60px;
         margin-left: 50px;
 
-        @media (max-width: 768px) {
-            width: 100px;
-            height: auto;
-        }
     }
 
     >div {
-        @media (max-width: 768px) {
-            display: flex;
-            justify-content: space-around;
-        }
+        display: flex;
 
         .sing {
             width: 220px;
             height: 44px;
+            background: linear-gradient(90deg, #8c32e1 0%, #5112f1 100%);
+            font-size: 27px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            line-height: 44px;
+            font-family: '阿里包巴惠普体BOLD';
+            border-radius: 44px;
 
-            @media (max-width: 768px) {
-                width: 100px;
-                height: auto;
+            &:hover {
+                background: #fff;
+                //渐变字体
+                color: #5112f1;
             }
         }
 
@@ -41,11 +43,6 @@
             height: 46px;
             margin: 0 50px;
 
-            @media (max-width: 768px) {
-                width: 30px;
-                height: auto;
-                margin: 0 20px;
-            }
         }
     }
 }

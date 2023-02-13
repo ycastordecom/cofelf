@@ -55,14 +55,19 @@
 
             >div:nth-child(2) {
                 position: relative;
+                width: 330px;
+                height: 400px;
+                border-radius: 25px;
+
+                &:hover {
+                    box-shadow: 0 10px 85px #4f64ec;
+                }
 
                 img {
                     width: 330px;
                     height: 400px;
-                    //阴影
-                    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
-                    //圆角
                     border-radius: 25px;
+                    display: inline-block;
                 }
 
                 >div {
@@ -83,7 +88,6 @@
 
         }
 
-        //TODO:这个地方的样式有问题，给的素材无法做响应式
         .fall {
             color: #fff;
 
@@ -121,11 +125,20 @@
                         font-family: "阿里包巴惠普体LIGHT";
                     }
 
-                    img {
-                        position: absolute;
-                        bottom: 48px;
-                        left: 50%;
-                        transform: translateX(-50%);
+                    .button {
+                        margin: 0 auto;
+                        width: 220px;
+                        height: 48px;
+                        border-radius: 48px;
+                        line-height: 48px;
+                        border: 1px solid #fff;
+                        margin-top: 60px;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #17192B;
+                        }
                     }
                 }
             }
@@ -183,8 +196,17 @@
             height: 50px;
             margin-top: 32px;
             margin-bottom: 120px;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 20px;
 
-
+            &:hover {
+                background-color: #fff;
+                color: #17192B;
+            }
         }
 
         .guangdong {
@@ -273,8 +295,22 @@
                     }
                 }
 
-                img {
+
+                .button {
                     margin-top: 60px;
+                    width: 380px;
+                    height: 60px;
+                    border-radius: 60px;
+                    line-height: 60px;
+                    border: 1px solid #fff;
+                    font-size: 26px;
+                    font-weight: 300;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #17192B;
+                    }
                 }
             }
         }

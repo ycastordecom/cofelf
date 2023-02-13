@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    min-width: 1300px;
+    width: 100%;
+}
+
 html,
 body,
 #app {
@@ -10,6 +15,7 @@ body,
     height: 100%;
 }
 
+//AlibabaPuHuiTi-2-35-Thin.ttf
 @font-face {
     font-family: "阿里包巴惠普体THIN";
     src: url('./assets/font/AlibabaPuHuiTi-2-35-Thin.ttf');
@@ -55,4 +61,19 @@ body,
     src: url('./assets/font/AlibabaPuHuiTi-2-55-Regular.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+
+// 图片移入特效
+:global {
+    .img-hover {
+
+        &:hover {
+            transform: scale(1.04);
+            //时间
+            transition: all 1s;
+            //阴影
+            box-shadow: 0 10px 85px #4f64ec;
+        }
+    }
 }

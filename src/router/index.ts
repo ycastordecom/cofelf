@@ -5,9 +5,9 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 22:47:44
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-13 00:07:38
+ * @LastEditTime: 2023-02-13 17:31:20
  */
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -29,7 +29,8 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  //hash模式
+  history: createWebHashHistory(),
   routes,
 });
 

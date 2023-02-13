@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+body {
+  min-width: 1300px;
+  width: 100%;
+}
 html,
 body,
 #app {
@@ -43,4 +47,9 @@ body,
   src: url('assets/font/AlibabaPuHuiTi-2-55-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+}
+:global .img-hover:hover {
+  transform: scale(1.04);
+  transition: all 1s;
+  box-shadow: 0 10px 85px #4f64ec;
 }

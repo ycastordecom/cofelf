@@ -1,0 +1,193 @@
+.series {
+  background: linear-gradient(180deg, #030308 0%, #18192a 100%);
+  background-size: cover;
+  width: 100%;
+}
+.series > img {
+  display: block;
+  width: 1200px;
+  height: 140px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.series iframe {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  height: 800px;
+}
+.series .metavers {
+  height: 1265px;
+  background: url(../../assets/image/WechatIMG179.jpeg) no-repeat right;
+  background-size: 838px auto;
+  color: #fff;
+}
+.series .metavers > div:nth-child(1) {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.series .metavers > div:nth-child(1) > h1 {
+  font-size: 160px;
+  font-family: 'valky-light';
+}
+.series .metavers > div:nth-child(1) h2 {
+  font-size: 60px;
+  font-family: '阿里包巴惠普体BOLD';
+  margin-bottom: 52px;
+}
+.series .metavers > div:nth-child(1) p {
+  width: 1000px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-indent: 2em;
+  line-height: 40px;
+}
+.series .box {
+  background: url(../../assets/image/WechatIMG260.jpeg) no-repeat right;
+  background-blend-mode: multiply;
+  background-size: 100% auto;
+}
+.series .box > div {
+  margin: 0 auto;
+  width: 1200px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.series .box > div > h1 {
+  font-size: 160px;
+  font-family: 'valky-light';
+}
+.series .box > div > h2 {
+  font-size: 60px;
+  font-family: '阿里包巴惠普体BOLD';
+}
+.series .box > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.series .box > div > div > img {
+  margin-top: 80px;
+}
+.series .news {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.series .news > div {
+  width: 585px;
+  height: 860px;
+  background-color: #212338;
+  border-radius: 20px;
+}
+.series .news > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.series .news > div:nth-child(1) > img {
+  margin-top: 30px;
+}
+.series .news > div:nth-child(1) > div {
+  height: 60px;
+  width: 100%;
+  line-height: 63px;
+  text-align: center;
+  font-size: 26px;
+}
+.series .news > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.series .news > div:nth-child(2) > iframe {
+  width: 540px !important;
+  height: 340px !important;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.series .news > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 100px;
+}
+.series .joint {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 274px;
+  color: #fff;
+  padding-bottom: 100px;
+}
+.series .joint > div:nth-child(1) {
+  font-size: 60px;
+  font-family: '阿里包巴惠普体BOLD';
+}
+.series .joint > div:nth-child(2) {
+  font-size: 164px;
+  font-family: 'valky-light';
+}
+.series .joint > div:nth-child(3) {
+  color: #fff;
+}
+.series .joint > div:nth-child(3) > div {
+  padding: 104px 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  background-color: #212338;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.series .joint > div:nth-child(3) > div > div:nth-child(1) {
+  height: 293px;
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.series .joint > div:nth-child(3) > div > div:nth-child(2) {
+  width: 826px;
+}
+.series .joint > div:nth-child(3) > div > div:nth-child(2) > img {
+  padding: 10px;
+}
+.series .joint > div:nth-child(3) > div:nth-child(1) {
+  font-size: 60px;
+  font-family: '阿里包巴惠普体BOLD';
+}
+.series .joint > div:nth-child(3) > div:nth-child(2) {
+  font-size: 40px;
+  font-family: '阿里包巴惠普体BOLD';
+}
+.series .joint > div:nth-child(3) > div:nth-child(3) {
+  font-size: 60px;
+  font-family: '阿里包巴惠普体BOLD';
+  display: flex;
+}
+.series .joint > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.series .joint > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {
+  width: 299px;
+  margin-right: 17px;
+}
+.series .joint > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.series .joint > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) div img {
+  padding: 5px;
+}

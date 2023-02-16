@@ -1,0 +1,310 @@
+.nav {
+  height: 100px;
+  width: 100%;
+}
+body {
+  background-color: #18192a;
+  color: #fff;
+}
+body .banner {
+  background: url(../../assets//image/banner-1920x1186px.png) no-repeat;
+  background-size: 100% auto;
+}
+body .banner > div {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+body .banner > div > h1:nth-child(1) {
+  padding-top: 880px;
+}
+body .banner > div > h1:nth-child(1) > div {
+  font-size: 30px;
+  font-family: '阿里包巴惠普体THIN';
+  position: absolute;
+  top: 1005px;
+  left: 0;
+}
+body .banner > div > h2:nth-child(2) {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  font-family: '阿里包巴惠普体BOLD';
+  padding-bottom: 68px;
+}
+body .banner > div > div:nth-child(3) {
+  height: 692px;
+  background: url(../../assets//image/beijing-1200x692px.png) no-repeat;
+  background-size: 100% auto;
+  display: flex;
+}
+body .banner > div > div:nth-child(3) > img {
+  margin-left: 123px;
+  height: 512px;
+}
+body .banner > div > div:nth-child(3) > div:nth-child(2) {
+  width: 668px;
+}
+body .banner > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+  background: url(../../assets//image/668x99px.png) no-repeat;
+  background-size: 100% auto;
+  height: 99px;
+  display: flex;
+  font-family: '阿里包巴惠普体BOLD';
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding-left: 50px;
+  text-shadow: 0 0 10px #9c44ea, 0 0 5px #9c44ea;
+}
+body .banner > div > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+  margin-left: 165px;
+  text-align: justify;
+  margin-top: 68px;
+  text-shadowmargin-top: 64px;
+  font-size: 18px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-family: '阿里包巴惠普体THIN';
+}
+body .banner > div > div:nth-child(4) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+body .banner > div > div:nth-child(4) > div {
+  width: 286px;
+  height: 400px;
+  background-color: #212338;
+  border-radius: 20px;
+}
+body .banner > div > div:nth-child(4) > div > img {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+body .banner > div > div:nth-child(4) > div > div {
+  height: 44px;
+  text-align: center;
+  font-size: 20px;
+  font-family: '阿里包巴惠普体MEDIUM';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+body .banner > div > h2:nth-child(5) {
+  margin-top: 160px;
+  text-align: center;
+  font-size: 40px;
+  font-family: '阿里包巴惠普体BOLD';
+  padding-bottom: 60px;
+}
+body .banner > div > div:nth-child(6) {
+  height: 675px;
+  display: flex;
+}
+body .banner > div > div:nth-child(6) > div {
+  position: relative;
+  flex: 1;
+  margin-right: 50px;
+}
+body .banner > div > div:nth-child(6) > div > h3 {
+  font-family: 'valky-light';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(2) {
+  font-family: 'valky-light';
+  text-transform: uppercase;
+  font-size: 90px;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(3) {
+  font-family: '啊里包巴惠普体THIN';
+  margin-top: 36px;
+  text-indent: 2em;
+  font-size: 24px;
+  text-align: justify;
+  width: 702px;
+  margin: 0;
+  line-height: 30px;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(4) {
+  text-align: justify;
+  margin: 0;
+  font-family: '啊里包巴惠普体THIN';
+  text-indent: 2em;
+  width: 702px;
+  font-size: 24px;
+  line-height: 30px;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(5) {
+  width: 702px;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(5) > img:nth-child(1) {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(5) > img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  width: 78px;
+  z-index: 1;
+}
+body .banner > div > div:nth-child(6) > div > div:nth-child(5) > img:nth-child(3) {
+  position: absolute;
+  left: 287px;
+  bottom: 0px;
+}
+body .banner > div > div:nth-child(6) > img {
+  width: 448px;
+}
+body .banner > div > div:nth-child(7) {
+  height: 675px;
+  display: flex;
+  margin-top: 144px;
+  position: relative;
+}
+body .banner > div > div:nth-child(7) > img:nth-child(1) {
+  width: 448px;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(2) {
+  width: 430px;
+  margin: 0 18px;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(2) > h3 {
+  font-family: 'valky-light';
+  font-size: 32px;
+  text-transform: uppercase;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) {
+  font-family: 'valky-light';
+  text-transform: uppercase;
+  font-size: 90px;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(2) > div:nth-child(3) {
+  font-family: '啊里包巴惠普体THIN';
+  margin-top: 36px;
+  text-indent: 2em;
+  font-size: 24px;
+  text-align: justify;
+  width: 430px;
+  margin: 0;
+  line-height: 30px;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(2) > div:nth-child(4) {
+  text-align: justify;
+  margin: 0;
+  font-family: '啊里包巴惠普体THIN';
+  text-indent: 2em;
+  width: 430px;
+  font-size: 24px;
+  line-height: 30px;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(3) > img:nth-child(1) {
+  position: absolute;
+  right: 143px;
+  top: 0;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(3) > img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+body .banner > div > div:nth-child(7) > div:nth-child(3) > img:nth-child(3) {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+}
+body .banner > div > div:nth-child(8) {
+  margin-top: 144px;
+}
+body .banner > div > div:nth-child(8) h1 {
+  font-size: 110px;
+  font-family: 'valky-light';
+}
+body .banner > div > div:nth-child(8) > div:nth-child(2) {
+  margin-top: 24px;
+  display: flex;
+}
+body .banner > div > div:nth-child(8) > div:nth-child(2) > img {
+  width: 591px;
+  height: 365px;
+}
+body .banner > div > div:nth-child(8) > div:nth-child(2) > div {
+  padding: 36px;
+  box-sizing: border-box;
+  flex: 1;
+  font-size: 20px;
+  line-height: 35px;
+  text-indent: 2em;
+  font-family: '啊里包巴惠普体THIN';
+  text-transform: uppercase;
+  text-align: justify;
+}
+body .banner > div > div:nth-child(8) > div:nth-child(3) {
+  display: flex;
+  width: 100%;
+}
+body .banner > div > div:nth-child(8) > div:nth-child(3) > div:nth-child(1) {
+  width: 568px;
+  padding: 18px;
+  box-sizing: border-box;
+  flex: 1;
+  font-size: 20px;
+  line-height: 35px;
+  text-indent: 2em;
+  font-family: '啊里包巴惠普体THIN';
+  text-transform: uppercase;
+  text-align: justify;
+}
+body .banner > div > div:nth-child(8) > div:nth-child(3) > div:nth-child(2) {
+  width: 610px;
+}
+body .banner > div > h2:nth-child(9) {
+  margin-top: 160px;
+  text-align: center;
+  font-size: 40px;
+  font-family: '阿里包巴惠普体BOLD';
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+body .banner > div > div:nth-child(10) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+body .banner > div > div:nth-child(10) > div {
+  width: 280px;
+  height: 680px;
+  background-color: #212338;
+  border-radius: 20px;
+}
+body .banner > div > div:nth-child(10) > div > img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+body .banner > div > div:nth-child(10) > div > div {
+  width: 245px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 19px;
+}
+body .banner > div > div:nth-child(10) > div > div > h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: '阿里包巴惠普体BOLD';
+}
+body .banner > div > div:nth-child(10) > div > div > div {
+  margin-left: 10px;
+  width: 226px;
+  font-size: 14px;
+  font-family: '啊里包巴惠普体THIN';
+  text-align: justify;
+  line-height: 25px;
+}

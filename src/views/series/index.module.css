@@ -1,5 +1,5 @@
 .series {
-  background: linear-gradient(180deg, #030308 0%, #18192a 100%);
+  background: linear-gradient(180deg, #030308 0%, #18192a 50%, #18192a 100%);
   background-size: cover;
   width: 100%;
 }
@@ -43,7 +43,7 @@
   line-height: 40px;
 }
 .series .box {
-  background: url(../../assets/image/WechatIMG260.jpeg) no-repeat right;
+  background: url(../../assets/image/WechatIMG260.jpeg) no-repeat;
   background-blend-mode: multiply;
   background-size: 100% auto;
 }

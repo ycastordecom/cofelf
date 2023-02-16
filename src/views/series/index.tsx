@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-15 00:15:11
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-15 06:35:39
+ * @LastEditTime: 2023-02-15 07:31:33
  */
 
 import { defineComponent } from 'vue';
@@ -57,14 +57,14 @@ export default defineComponent({
               <h2>Series</h2>
               <div>
                 <div>
-                  <img src={i150260px} alt="" />
-                  <img src={i110x220px} alt="" />
-                  <img src={i110x220px2} alt="" />
-                  <img src={i110x220px3} alt="" />
-                  <img src={i110x220px4} alt="" />
-                  <img src={i110x220px5} alt="" />
-                  <img src={i110x220px6} alt="" />
-                  <img src={i110x220px36} alt="" />
+                  <img class="img-hover" src={i150260px} alt="" />
+                  <img class="img-hover" src={i110x220px} alt="" />
+                  <img class="img-hover" src={i110x220px2} alt="" />
+                  <img class="img-hover" src={i110x220px3} alt="" />
+                  <img class="img-hover" src={i110x220px4} alt="" />
+                  <img class="img-hover" src={i110x220px5} alt="" />
+                  <img class="img-hover" src={i110x220px6} alt="" />
+                  <img class="img-hover" src={i110x220px36} alt="" />
                 </div>
                 <img src={i538x1077px} alt="" />
               </div>
@@ -86,41 +86,41 @@ export default defineComponent({
             <div>
               <div>
                 <div>
-                  <img src={logo} alt="" />
-                  <img src={i65x65px} alt="" />
+                  <img class="img-hover" src={logo} alt="" />
+                  <img class="img-hover" src={i65x65px} alt="" />
                   <div>NOIR</div>
                 </div>
                 <div>
-                  <img src={i386x170px} alt="" />
-                  <img src={i386x170px} alt="" />
-                  <img src={i386x170px} alt="" />
-                  <img src={i386x170px} alt="" />
+                  <img class="img-hover" src={i386x170px} alt="" />
+                  <img class="img-hover" src={i386x170px} alt="" />
+                  <img class="img-hover" src={i386x170px} alt="" />
+                  <img class="img-hover" src={i386x170px} alt="" />
                 </div>
               </div>
               <div>
                 <div>
-                  <img src={logo} alt="" />
-                  <img src={i65x65px} alt="" />
+                  <img class="img-hover" src={logo} alt="" />
+                  <img class="img-hover" src={i65x65px} alt="" />
                   <div>COSELF FASHION</div>
                 </div>
                 <div>
-                  <img src={i767x293px} alt="" />
+                  <img class="img-hover" src={i767x293px} alt="" />
                 </div>
               </div>
               <div>
                 <div>
-                  <img src={logo} alt="" />
-                  <img src={i65x65px} alt="" />
+                  <img class="img-hover" src={logo} alt="" />
+                  <img class="img-hover" src={i65x65px} alt="" />
                   <div>MUA</div>
                 </div>
                 <div>
                   <div>
-                    <img src={i234x176px} alt="" />
-                    <img src={i234x176px} alt="" />
-                    <img src={i234x176px} alt="" />
-                    <img src={i234x176px} alt="" />
+                    <img class="img-hover" src={i234x176px} alt="" />
+                    <img class="img-hover" src={i234x176px} alt="" />
+                    <img class="img-hover" src={i234x176px} alt="" />
+                    <img class="img-hover" src={i234x176px} alt="" />
                   </div>
-                  <img src={i299x364px} alt="" />
+                  <img class="img-hover" src={i299x364px} alt="" />
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 00:34:36
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-16 21:34:06
+ * @LastEditTime: 2023-02-17 00:09:14
  */
 
 import { defineComponent, onMounted } from 'vue';
@@ -50,7 +50,6 @@ export default defineComponent({
         } else {
           text.innerHTML = txt[xiaBiao].slice(0, index--);
         }
-
         if (index == txt[xiaBiao].length + 3) {
           huan = false;
         } else if (index < 0) {
@@ -66,7 +65,7 @@ export default defineComponent({
       //监听页面滚动
       window.addEventListener('scroll', function () {
         // .scroll
-        const scroll = document.querySelector('.scroll1') as HTMLElement;
+        const scroll = document.querySelector('.scroll') as HTMLElement;
         // 获取他在页面中的位置
         const scrollTop = scroll.getBoundingClientRect().top;
 

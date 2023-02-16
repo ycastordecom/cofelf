@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 22:47:44
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-16 22:29:46
+ * @LastEditTime: 2023-02-16 23:45:25
  */
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    redirect: '/fashion',
+    redirect: '/index',
     // route level code-splitting
     // this generates a separate chunk (home.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

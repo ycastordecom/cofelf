@@ -86,7 +86,7 @@
   height: 380px;
   background: url(../../assets/image/card-1-1200x380px.png);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .index > div .fall > div:nth-child(2) > div {
   width: 580px;

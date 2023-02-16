@@ -35,7 +35,9 @@
   font-family: '阿里包巴惠普体BOLD';
   margin-bottom: 52px;
 }
-.series .metavers > div:nth-child(1) p {
+.series .metavers > div:nth-child(1) > p {
+  height: 400px;
+  overflow-y: scroll;
   width: 1000px;
   font-size: 20px;
   text-transform: uppercase;

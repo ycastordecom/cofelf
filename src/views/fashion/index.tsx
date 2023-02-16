@@ -5,10 +5,10 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 00:34:36
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-16 09:53:42
+ * @LastEditTime: 2023-02-16 21:34:06
  */
 
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted } from 'vue';
 import style from './index.module.less';
 import digital from '@/assets/image/Digital tide toy.png';
 import i273x512px from '@/assets/image/273x512px.png';
@@ -33,9 +33,56 @@ import i19x280px from '@/assets/image/19x280px.png';
 import i262x324px2 from '@/assets/image/262x324px-2.png';
 import i262x324px3 from '@/assets/image/262x324px-3.png';
 import i262x324px4 from '@/assets/image/262x324px-4.png';
+
 export default defineComponent({
   name: 'Fashion',
   setup() {
+    onMounted(() => {
+      //打字机
+      const text = document.querySelector('.text') as HTMLElement;
+      const txt = ['NATIONAL MAIDEN'];
+      let index = 0;
+      let xiaBiao = 0;
+      let huan = true;
+      setInterval(function () {
+        if (huan) {
+          text.innerHTML = txt[xiaBiao].slice(0, ++index);
+        } else {
+          text.innerHTML = txt[xiaBiao].slice(0, index--);
+        }
+
+        if (index == txt[xiaBiao].length + 3) {
+          huan = false;
+        } else if (index < 0) {
+          index = 0;
+          huan = true;
+          xiaBiao++;
+          if (xiaBiao >= txt.length) {
+            xiaBiao = 0;
+          }
+        }
+      }, 200);
+
+      //监听页面滚动
+      window.addEventListener('scroll', function () {
+        // .scroll
+        const scroll = document.querySelector('.scroll1') as HTMLElement;
+        // 获取他在页面中的位置
+        const scrollTop = scroll.getBoundingClientRect().top;
+
+        //页面滚动到他的位置时，让他逐渐显示
+        if (scrollTop < 500) {
+          scroll.style.opacity = '1';
+          //动画
+          scroll.style.transition = 'all 1s';
+        } else {
+          scroll.style.opacity = '0';
+          //动画
+          scroll.style.transition = 'all 1s';
+        }
+      });
+    });
+
     return () => {
       return (
         <div>
@@ -50,43 +97,29 @@ export default defineComponent({
               <div>
                 <img src={i273x512px} alt="" />
                 <div>
-                  <div>NATIONAL MAIDEN</div>
                   <div>
+                    <p class="text"></p>
+                  </div>
+                  <div class="scroll">
                     "National Girl" is a girl with personality and fighting power. She has taken up the mission of protecting her nation since she was born. In the wasted years, she has numerous
                     achievements, but the face can not see the traces of the years, has the appearance of not old, people affectionately called her "national girl".
                   </div>
                 </div>
               </div>
               <div>
-                <div>
+                <div class="img-hover">
                   <img src={i250x340px1} alt="" />
                   <div>National maiden</div>
                 </div>
-                <div>
+                <div class="img-hover">
                   <img src={i250x340pxw} alt="" />
                   <div>Sky land</div>
                 </div>
-                <div>
+                <div class="img-hover">
                   <img src={i2250x340px1} alt="" />
                   <div>Blue and white porcelain</div>
                 </div>
-                <div>
-                  <img src={i2250x340px12} alt="" />
-                  <div>Geometric mirohime</div>
-                </div>
-                <div>
-                  <img src={i250x340px1} alt="" />
-                  <div>National maiden</div>
-                </div>
-                <div>
-                  <img src={i250x340pxw} alt="" />
-                  <div>Sky land</div>
-                </div>
-                <div>
-                  <img src={i2250x340px1} alt="" />
-                  <div>Blue and white porcelain</div>
-                </div>
-                <div>
+                <div class="img-hover">
                   <img src={i2250x340px12} alt="" />
                   <div>Geometric mirohime</div>
                 </div>

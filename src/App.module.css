@@ -53,3 +53,44 @@ body,
   transition: all 1s;
   box-shadow: 0 10px 85px #4f64ec;
 }
+:global .img-click {
+  transform: scale(1.5);
+  transition: all 1s;
+}
+:global .text {
+  display: inline-block;
+  position: relative;
+}
+:global .text::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 5px;
+  height: 50px;
+  width: 3px;
+  background-color: #fff;
+  animation: san 0.5s steps(1) infinite;
+}
+@keyframes san {
+  0%,
+  100% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: transparent;
+  }
+}
+:global .fade-enter {
+  opacity: 0;
+}
+:global .fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+:global .fade-exit {
+  opacity: 1;
+}
+:global .fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
+}

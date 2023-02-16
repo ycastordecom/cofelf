@@ -77,3 +77,66 @@ body,
         }
     }
 }
+
+//点击特效
+:global {
+    .img-click {
+        transform: scale(1.5);
+        //时间
+        transition: all 1s;
+    }
+}
+
+//打字机特效
+:global {
+    .text {
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 5px;
+            height: 50px;
+            width: 3px;
+            background-color: #fff;
+            animation: san 0.5s steps(1) infinite;
+        }
+    }
+
+    @keyframes san {
+
+        0%,
+        100% {
+            background-color: #fff;
+        }
+
+        50% {
+            background-color: transparent;
+        }
+
+    }
+}
+
+
+//渐显
+:global {
+    .fade-enter {
+        opacity: 0;
+    }
+
+    .fade-enter-active {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    .fade-exit {
+        opacity: 1;
+    }
+
+    .fade-exit-active {
+        opacity: 0;
+        transition: opacity 1s;
+    }
+}

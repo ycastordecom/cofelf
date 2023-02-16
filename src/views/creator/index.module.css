@@ -1,0 +1,109 @@
+.nav {
+  height: 100px;
+  width: 100%;
+}
+body {
+  background-color: #18192a;
+  color: #fff;
+}
+.creator > div:nth-child(2) {
+  height: 1180px;
+  width: 100%;
+  position: relative;
+  background: url(../../assets/image/WeChat58faaa3892e77a5beec233e5c9c26fe6.png) no-repeat;
+  background-size: 100% 100%;
+}
+.creator > div:nth-child(2) > div:nth-child(1) {
+  position: absolute;
+  top: 999px;
+  right: 360px;
+  font-size: 60px;
+  font-family: '阿里包巴惠普体LIGHT';
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 60px;
+  text-align: right;
+}
+.creator > div:nth-child(3) {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+  height: 317px;
+  background-color: #212338;
+  border-radius: 30px;
+}
+.creator > div:nth-child(3) > h2 {
+  font-size: 30px;
+  padding-top: 18px;
+  text-align: center;
+}
+.creator > div:nth-child(3) > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.creator > div:nth-child(3) > div > img {
+  margin: 0 27px;
+}
+.creator > div:nth-child(4) {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 48px;
+  height: 317px;
+  background-color: #212338;
+  border-radius: 30px;
+}
+.creator > div:nth-child(4) > h2 {
+  font-size: 30px;
+  padding-top: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.creator > div:nth-child(4) > div {
+  background: url(../../assets/image/230x173px.png) no-repeat;
+  background-size: 230px 173px;
+  background-position: 50% 50%;
+  height: 173px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 173px;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'valky-light';
+  text-transform: uppercase;
+}
+.creator > div:nth-child(5) {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 48px;
+  background-color: #212338;
+  border-radius: 30px;
+  height: 1550px;
+  margin-bottom: 20px;
+}
+.creator > div:nth-child(5) > h2 {
+  height: 84px;
+  line-height: 84px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.creator > div:nth-child(5) .item {
+  height: 212px;
+  width: 1088px;
+  margin: 30px auto;
+  display: flex;
+}
+.creator > div:nth-child(5) .item > div {
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+.creator > div:nth-child(5) .item > div > div:nth-child(1) {
+  font-size: 30px;
+  font-family: '阿里包巴惠普体BOLD';
+}
+.creator > div:nth-child(5) .item > div > div {
+  font-size: 20px;
+  font-family: '阿里包巴惠普体REGULAR';
+  margin-top: 10px;
+}

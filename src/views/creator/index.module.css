@@ -93,6 +93,7 @@ body {
   width: 1088px;
   margin: 30px auto;
   display: flex;
+  cursor: pointer;
 }
 .creator > div:nth-child(5) .item > div {
   margin-left: 50px;

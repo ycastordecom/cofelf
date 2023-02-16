@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 23:34:48
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-16 22:36:03
+ * @LastEditTime: 2023-02-17 01:26:18
  */
 
 import { defineComponent } from 'vue';
@@ -13,8 +13,13 @@ import style from './index.module.less';
 import human from '@/assets/image/Head picture-330x400px.png';
 import card from '@/assets/image/card-2.2-250x326px.png';
 import square from '@/assets/image/square-22x80px.png';
-import card3 from '@/assets/image/card-3.2-350x450px.png';
 import router from '@/router';
+import Lipstick from '@/assets/image/Lipstick Mechanic.png';
+import Dragon from '@/assets/image/Dragon lady of the east.png';
+import Butterflies from '@/assets/image/Butterflies create everything.png';
+import Geometric from '@/assets/image/Geometric mirohime.png';
+import National from '@/assets/image/National maiden.png';
+import Sky from '@/assets/image/Sky land.png';
 
 export default defineComponent({
   name: 'Index',
@@ -62,19 +67,19 @@ export default defineComponent({
             <div>
               <div class={[style.item, 'img-hover']}>
                 <img src={card} alt="" />
-                <div>DIGITAL FAD</div>defineComponent
-              </div>
-              <div class={[style.item, 'img-hover']}>
-                <img src={card} alt="" />
                 <div>DIGITAL FAD</div>
               </div>
               <div class={[style.item, 'img-hover']}>
-                <img src={card} alt="" />
-                <div>DIGITAL FAD</div>
+                <img src={Geometric} alt="" />
+                <div>Geometric mirohime</div>
               </div>
               <div class={[style.item, 'img-hover']}>
-                <img src={card} alt="" />
-                <div>DIGITAL FAD</div>
+                <img src={National} alt="" />
+                <div>National maiden</div>
+              </div>
+              <div class={[style.item, 'img-hover']}>
+                <img src={Sky} alt="" />
+                <div>Sky land</div>
               </div>
             </div>
           </div>
@@ -84,26 +89,26 @@ export default defineComponent({
           <div class={style.guangdong}>
             <img src={square} alt="" />
             <div class={style.text}>
-              <h2>2022 Guangdong Fashion Week</h2>
-              <h2>White Lining e Digital Fashion Festival "Four Moments"</h2>
+              <h2>London Fashion Week </h2>
+              <h2>Beauty goblin COSELF virtual series big show</h2>
             </div>
           </div>
           <div class={style.moment}>
             <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
-              <div>Workplace moment</div>
-              <img src={card3} alt="" />
+              <div>Lipstick Mechanic</div>
+              <img src={Lipstick} alt="" />
+              <div>The proper "stupid" is more points</div>
+              <div>Proper "pendulum" can be more full of blood resurrection</div>
+            </div>
+            <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
+              <div>Dragon lady of the east</div>
+              <img src={Dragon} alt="" />
               <div>The proper "stupid" is more points</div>
               <div>Proper "pendulum" can be more full of blood resurrection</div>
             </div>
             <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
               <div>Workplace moment</div>
-              <img src={card3} alt="" />
-              <div>The proper "stupid" is more points</div>
-              <div>Proper "pendulum" can be more full of blood resurrection</div>
-            </div>
-            <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
-              <div>Workplace moment</div>
-              <img src={card3} alt="" />
+              <img src={Butterflies} alt="" />
               <div>The proper "stupid" is more points</div>
               <div>Proper "pendulum" can be more full of blood resurrection</div>
             </div>

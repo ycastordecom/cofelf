@@ -33,10 +33,38 @@
   background: #fff;
   color: #5112f1;
 }
-.header > div .menu {
+.header .select .menu {
   width: 60px;
   height: 46px;
-  margin: 0 50px;
+  margin: 0 100px;
+}
+.header .select > div:nth-child(2) {
+  background-color: #3b3c4f;
+  position: absolute;
+  top: 70px;
+  display: none;
+  border-radius: 20px;
+  right: 20px;
+  text-transform: uppercase;
+}
+.header .select > div:nth-child(2) > div {
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.header .select > div:nth-child(2) > div:hover {
+  background-color: #5235ec;
+  color: #fff;
+}
+.header .select:hover > div:nth-child(2) {
+  display: block;
 }
 @keyframes fadeOut {
   0% {

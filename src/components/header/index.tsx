@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 23:36:10
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-15 00:11:48
+ * @LastEditTime: 2023-02-17 01:10:01
  */
 
 import { defineComponent, ref } from 'vue';
@@ -14,7 +14,7 @@ import style from './index.module.less';
 //图片
 import logo from './static/LOGO-1-220x60px.png';
 import menu from './static/menu-60x46px.png';
-
+import router from '@/router';
 export default defineComponent({
   name: 'Header',
   setup() {
@@ -55,16 +55,26 @@ export default defineComponent({
           }`
         );
         header.value.style.animationPlayState = 'paused';
-        header.value.style.animation = 'fadeIn 2s';
+        header.value.style.animation = 'fadeIn 1s';
       }
     });
-
+    const toUrl = (url: string) => {
+      router.push(url);
+    };
     return () => (
       <div ref={header} class={style.header}>
         <img class={style.logo} src={logo} alt="" />
         <div>
           <div class={style.sing}>SIGN IN</div>
-          <img class={style.menu} src={menu} alt="" />
+          <div class={style.select}>
+            <img class={style.menu} src={menu} alt="" />
+            <div>
+              <div onClick={() => toUrl('/index')}>Home page</div>
+              <div onClick={() => toUrl('/series')}>COSELF Metavers</div>
+              <div onClick={() => toUrl('/fashion')}>Future fashion</div>
+              <div onClick={() => toUrl('/creator')}>Meet meleteea</div>
+            </div>
+          </div>
         </div>
       </div>
     );

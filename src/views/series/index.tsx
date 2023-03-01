@@ -5,13 +5,13 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-15 00:15:11
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-16 22:25:51
+ * @LastEditTime: 2023-03-01 17:25:25
  */
 
 import { defineComponent, onMounted } from 'vue';
 import style from './index.module.less';
 import coself from '@/assets/image/metavers-1150x140px.png';
-import i150260px from '@/assets/image/150x260px.png';
+import i150260px from '@/assets/image/110x220px.png';
 import i110x220px from '@/assets/image/110x220px (7).png';
 import i110x220px2 from '@/assets/image/110x220px (1).png';
 import i110x220px3 from '@/assets/image/110x220px (2).png';
@@ -24,8 +24,14 @@ import i540x760px from '@/assets/image/540x760px.png';
 import logo from '@/assets/image/logo-220x60px.png';
 import i65x65px from '@/assets/image/65x65px.png';
 import i386x170px from '@/assets/image/386x170px (1).png';
+import i386x170px2 from '@/assets/image/23.png';
+import i386x170px3 from '@/assets/image/3.png';
+import i386x170px4 from '@/assets/image/4.png';
 import i767x293px from '@/assets/image/767x293px.png';
 import i234x176px from '@/assets/image/234x176px (1).png';
+import i234x176px2 from '@/assets/image/234x176px (2).png';
+import i234x176px3 from '@/assets/image/234x176px (3).png';
+import i234x176px4 from '@/assets/image/234x176px (4).png';
 import i299x364px from '@/assets/image/299x364px.png';
 import aaaa from '@/assets/image/aaaa.png';
 import bbbb from '@/assets/image/bbbb.png';
@@ -52,10 +58,6 @@ export default defineComponent({
         //页面滚动到他的位置时，让他逐渐显示
         if (scrollTop < 500) {
           scroll.style.opacity = '1';
-          //动画
-          scroll.style.transition = 'all 1s';
-        } else {
-          scroll.style.opacity = '0';
           //动画
           scroll.style.transition = 'all 1s';
         }
@@ -121,41 +123,41 @@ export default defineComponent({
             <div>
               <div>
                 <div>
-                  <img class="img-hover" src={logo} alt="" />
-                  <img class="img-hover" src={i65x65px} alt="" />
+                  <img src={logo} alt="" />
+                  <img src={i65x65px} alt="" />
                   <div>NOIR</div>
                 </div>
                 <div>
-                  <img class="img-hover" src={i386x170px} alt="" />
-                  <img class="img-hover" src={i386x170px} alt="" />
-                  <img class="img-hover" src={i386x170px} alt="" />
-                  <img class="img-hover" src={i386x170px} alt="" />
+                  <img src={i386x170px} alt="" />
+                  <img src={i386x170px2} alt="" />
+                  <img src={i386x170px3} alt="" />
+                  <img src={i386x170px4} alt="" />
                 </div>
               </div>
               <div>
                 <div>
-                  <img class="img-hover" src={logo} alt="" />
-                  <img class="img-hover" src={i65x65px} alt="" />
+                  <img src={logo} alt="" />
+                  <img src={i65x65px} alt="" />
                   <div>COSELF FASHION</div>
                 </div>
                 <div>
-                  <img class="img-hover" src={i767x293px} alt="" />
+                  <img src={i767x293px} alt="" />
                 </div>
               </div>
               <div>
                 <div>
-                  <img class="img-hover" src={logo} alt="" />
-                  <img class="img-hover" src={i65x65px} alt="" />
+                  <img src={logo} alt="" />
+                  <img src={i65x65px} alt="" />
                   <div>MUA</div>
                 </div>
                 <div>
                   <div>
-                    <img class="img-hover" src={i234x176px} alt="" />
-                    <img class="img-hover" src={i234x176px} alt="" />
-                    <img class="img-hover" src={i234x176px} alt="" />
-                    <img class="img-hover" src={i234x176px} alt="" />
+                    <img src={i234x176px} alt="" />
+                    <img src={i234x176px2} alt="" />
+                    <img src={i234x176px3} alt="" />
+                    <img src={i234x176px4} alt="" />
                   </div>
-                  <img class="img-hover" src={i299x364px} alt="" />
+                  <img src={i299x364px} alt="" />
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 22:31:04
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-16 23:50:45
+ * @LastEditTime: 2023-03-01 17:06:30
  */
 import { defineComponent } from 'vue';
 import i499x210px from '@/assets/image/499x210px.png';
@@ -50,7 +50,7 @@ export default defineComponent({
         <div>
           <h2>News</h2>
           <div>
-            <div onClick={() => toPath('https://baijiahao.baidu.com/s?id=1717503293366815575&wfr=spider&for=pc')} class={style.item}>
+            <div onClick={() => toPath('https://baijiahao.baidu.com/s?id=1717503293366815575&wfr=spider&for=pc')} class={[style.item,'img-hover']}>
               <img src={news1} alt="" />
               <div>
                 <div>The artist interview | trend</div>
@@ -58,14 +58,14 @@ export default defineComponent({
                 <div>shape their own diversity</div>
               </div>
             </div>
-            <div onClick={() => toPath('https://baijiahao.baidu.com/s?id=1717503293366815575&wfr=spider&for=pc')} class={style.item}>
+            <div onClick={() => toPath('https://baijiahao.baidu.com/s?id=1717503293366815575&wfr=spider&for=pc')} class={[style.item,'img-hover']}>
               <img src={news2} alt="" />
               <div>
                 <div>The first battle was successful</div>
                 <div>Beauty Fairy series 3D digital collection sold out! </div>
               </div>
             </div>
-            <div onClick={() => toPath('https://mp.weixin.qq.com/s/wRqtEVmgbsMooAya42oY5w')} class={style.item}>
+            <div onClick={() => toPath('https://mp.weixin.qq.com/s/wRqtEVmgbsMooAya42oY5w')} class={[style.item,'img-hover']}>
               <img src={news3} alt="" />
               <div>
                 <div>Collection launch</div>
@@ -73,7 +73,7 @@ export default defineComponent({
                 <div>the first wave of limited</div>
               </div>
             </div>
-            <div onClick={() => toPath('https://mi.mbd.baidu.com/r/N1qYkeDSVO?f=cp&u=97da69f95973fe80')} class={style.item}>
+            <div onClick={() => toPath('https://mi.mbd.baidu.com/r/N1qYkeDSVO?f=cp&u=97da69f95973fe80')} class={[style.item,'img-hover']}>
               <img src={news4} alt="" />
               <div>
                 <div>NGART</div>
@@ -81,7 +81,7 @@ export default defineComponent({
                 <div>generation trend art season</div>
               </div>
             </div>
-            <div onClick={() => toPath('https://page.om.qq.com/page/O7XyTbOIQbkqFBgjedeULIrg0')} class={style.item}>
+            <div onClick={() => toPath('https://page.om.qq.com/page/O7XyTbOIQbkqFBgjedeULIrg0')} class={[style.item,'img-hover']}>
               <img src={news5} alt="" />
               <div>
                 <div>COSELF&NOI</div>
@@ -89,7 +89,7 @@ export default defineComponent({
                 <div>and coffee brand Noir Nonoya open delicious linkage</div>
               </div>
             </div>
-            <div onClick={() => toPath('https://page.om.qq.com/page/O7XyTbOIQbkqFBgjedeULIrg0')} class={style.item}>
+            <div onClick={() => toPath('https://page.om.qq.com/page/O7XyTbOIQbkqFBgjedeULIrg0')} class={[style.item,'img-hover']}>
               <img src={news6} alt="" />
               <div>
                 <div>COSELF&MUA</div>

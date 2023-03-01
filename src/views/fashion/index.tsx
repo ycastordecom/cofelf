@@ -5,10 +5,10 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 00:34:36
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-17 00:09:14
+ * @LastEditTime: 2023-03-01 16:56:56
  */
 
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import style from './index.module.less';
 import digital from '@/assets/image/Digital tide toy.png';
 import i273x512px from '@/assets/image/273x512px.png';
@@ -24,7 +24,6 @@ import EAST1448x675px from '@/assets/image/EAST-1-448x675px.png';
 import EAST2144x361px from '@/assets/image/EAST-2-144x361px.png';
 import EAST3171x331px from '@/assets/image/EAST-3-171x331px.png';
 import EAST4209x275px from '@/assets/image/EAST-4-209x275px.png';
-import LIPS1591x365px from '@/assets/image/LIPS-1-591x365px.png';
 import LIPS2166x351px from '@/assets/image/LIPS-2-166x351px.png';
 import LIPS3214x258px from '@/assets/image/LIPS-3-214x258px.png';
 import LIPS4197x297px from '@/assets/image/LIPS-4-197x297px.png';
@@ -33,6 +32,11 @@ import i19x280px from '@/assets/image/19x280px.png';
 import i262x324px2 from '@/assets/image/262x324px-2.png';
 import i262x324px3 from '@/assets/image/262x324px-3.png';
 import i262x324px4 from '@/assets/image/262x324px-4.png';
+import LIPS1591x365px from '@/assets/image/LIPS-1-591x365px.png';
+
+import BUT1591x365px2 from '@/assets/image/BLUEANDWHITEPOCELAIN273x512px.png';
+import SKYLAND273x512px from '@/assets/image/SKYLAND273x512px.png';
+import NATIONAL273x512px from '@/assets/image/NATIONALMAI273x512px.png';
 
 export default defineComponent({
   name: 'Fashion',
@@ -82,10 +86,18 @@ export default defineComponent({
       });
     });
 
+
+    //切换
+    const image = ref(i273x512px)
+    const change = (baseImage: any) => {
+      image.value = baseImage
+    }
+
     return () => {
       return (
         <div>
           <div class={style.nav}></div>
+          <div class={style.bgi}></div>
           <div class={style.banner}>
             <div>
               <h1>
@@ -94,7 +106,7 @@ export default defineComponent({
               </h1>
               <h2>FUTURE GOBLIN</h2>
               <div>
-                <img src={i273x512px} alt="" />
+                <img src={image.value} alt="" />
                 <div>
                   <div>
                     <p class="text"></p>
@@ -106,21 +118,21 @@ export default defineComponent({
                 </div>
               </div>
               <div>
-                <div class="img-hover">
+                <div onClick={() => change(NATIONAL273x512px)} class="img-hover">
                   <img src={i250x340px1} alt="" />
-                  <div>National maiden</div>
+                  <div>Geometric mirohime</div>
                 </div>
-                <div class="img-hover">
+                <div onClick={() => change(BUT1591x365px2)} class="img-hover">
                   <img src={i250x340pxw} alt="" />
-                  <div>Sky land</div>
-                </div>
-                <div class="img-hover">
-                  <img src={i2250x340px1} alt="" />
                   <div>Blue and white porcelain</div>
                 </div>
-                <div class="img-hover">
+                <div onClick={() => change(SKYLAND273x512px)} class="img-hover">
+                  <img src={i2250x340px1} alt="" />
+                  <div>Sky land</div>
+                </div>
+                <div onClick={() => change(i273x512px)} class="img-hover">
                   <img src={i2250x340px12} alt="" />
-                  <div>Geometric mirohime</div>
+                  <div>National maiden</div>
                 </div>
               </div>
               <h2>DIGITAL FASHION</h2>
@@ -129,11 +141,15 @@ export default defineComponent({
                   <h3>BUTTERFLES CREATE</h3>
                   <div>EVERYTHING</div>
                   <div>
-                    Fashion features: Star tiara, star pearl chain, laser butterfly wing skirt, translucent butterfly wing cape, colorful laser, imitation Raw metal butterfly, magic fluorescent
+                    <span>
+                      Fashion features:
+                    </span>Star tiara, star pearl chain, laser butterfly wing skirt, translucent butterfly wing cape, colorful laser, imitation Raw metal butterfly, magic fluorescent
                     headdress
                   </div>
                   <div>
-                    Fashion introduction: The overall sense of power butterfly shape and full of mechanical design, thin wings like cicada wings glow with the future The glossy, colorful irregulars
+                    <span>
+                      Fashion introduction:
+                    </span>The overall sense of power butterfly shape and full of mechanical design, thin wings like cicada wings glow with the future The glossy, colorful irregulars
                     are as soft as silk. Reconstruct and combine the futuristic light and bionic elements to show the butterfly The beauty of the reopening of the universe.
                   </div>
                   <div>

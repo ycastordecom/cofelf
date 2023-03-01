@@ -1,142 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-width: 1300px;
-    width: 100%;
+  min-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 html,
 body,
 #app {
-    width: 100%;
-    height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 //AlibabaPuHuiTi-2-35-Thin.ttf
 @font-face {
-    font-family: "阿里包巴惠普体THIN";
-    src: url('./assets/font/AlibabaPuHuiTi-2-35-Thin.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: '阿里包巴惠普体THIN';
+  src: url('./assets/font/AlibabaPuHuiTi-2-35-Thin.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // AlibabaPuHuiTi-2-65-Medium.ttf
 @font-face {
-    font-family: "阿里包巴惠普体MEDIUM";
-    src: url('./assets/font/AlibabaPuHuiTi-2-65-Medium.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: '阿里包巴惠普体MEDIUM';
+  src: url('./assets/font/AlibabaPuHuiTi-2-65-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // valky-light.otf
 @font-face {
-    font-family: "valky-light";
-    src: url('./assets/font/valky-light.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'valky-light';
+  src: url('./assets/font/valky-light.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //AlibabaPuHuiTi-2-45-Light.ttf
 @font-face {
-    font-family: "阿里包巴惠普体LIGHT";
-    src: url('./assets/font/AlibabaPuHuiTi-2-45-Light.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: '阿里包巴惠普体LIGHT';
+  src: url('./assets/font/AlibabaPuHuiTi-2-45-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //AlibabaPuHuiTi-2-85-Bold.ttf
 @font-face {
-    font-family: "阿里包巴惠普体BOLD";
-    src: url('./assets/font/AlibabaPuHuiTi-2-85-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: '阿里包巴惠普体BOLD';
+  src: url('./assets/font/AlibabaPuHuiTi-2-85-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //AlibabaPuHuiTi-2-55-Regular.ttf
 @font-face {
-    font-family: "阿里包巴惠普体Regular";
-    src: url('./assets/font/AlibabaPuHuiTi-2-55-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: '阿里包巴惠普体Regular';
+  src: url('./assets/font/AlibabaPuHuiTi-2-55-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 // 图片移入特效
 :global {
-    .img-hover {
-
-        &:hover {
-            transform: scale(1.04);
-            //时间
-            transition: all 1s;
-            //阴影
-            box-shadow: 0 10px 85px #4f64ec;
-        }
+  .img-hover {
+    &:hover {
+      transform: scale(1.04);
+      //时间
+      transition: all 1s;
+      //阴影
+      box-shadow: 0 10px 85px #4f64ec;
     }
+  }
 }
 
 //点击特效
 :global {
-    .img-click {
-        transform: scale(1.5);
-        //时间
-        transition: all 1s;
-    }
+  .img-click {
+    transform: scale(1.5);
+    //时间
+    transition: all 1s;
+  }
 }
 
 //打字机特效
 :global {
-    .text {
-        display: inline-block;
-        position: relative;
+  .text {
+    display: inline-block;
+    position: relative;
 
-        &::after {
-            content: '';
-            position: absolute;
-            right: -10px;
-            top: 5px;
-            height: 50px;
-            width: 3px;
-            background-color: #fff;
-            animation: san 0.5s steps(1) infinite;
-        }
+    &::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      top: 5px;
+      height: 50px;
+      width: 3px;
+      background-color: #fff;
+      animation: san 0.5s steps(1) infinite;
+    }
+  }
+
+  @keyframes san {
+    0%,
+    100% {
+      background-color: #fff;
     }
 
-    @keyframes san {
-
-        0%,
-        100% {
-            background-color: #fff;
-        }
-
-        50% {
-            background-color: transparent;
-        }
-
+    50% {
+      background-color: transparent;
     }
+  }
 }
-
 
 //渐显
 :global {
-    .fade-enter {
-        opacity: 0;
-    }
+  .fade-enter {
+    opacity: 0;
+  }
 
-    .fade-enter-active {
-        opacity: 1;
-        transition: opacity 1s;
-    }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 1s;
+  }
 
-    .fade-exit {
-        opacity: 1;
-    }
+  .fade-exit {
+    opacity: 1;
+  }
 
-    .fade-exit-active {
-        opacity: 0;
-        transition: opacity 1s;
-    }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 1s;
+  }
 }

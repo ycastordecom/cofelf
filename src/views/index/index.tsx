@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 23:34:48
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-17 01:26:18
+ * @LastEditTime: 2023-03-01 14:49:27
  */
 
 import { defineComponent } from 'vue';
@@ -36,7 +36,7 @@ export default defineComponent({
           <div>
             <div>
               <div>ABOUT BUZHI</div>
-              <div>MELEETE</div>
+              <div>MELETEE</div>
               <div>WOO</div>
               <div>THE NTH POSSIBILITY OF THE YUANTIDFIP ADDRFSS</div>
             </div>
@@ -97,20 +97,20 @@ export default defineComponent({
             <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
               <div>Lipstick Mechanic</div>
               <img src={Lipstick} alt="" />
-              <div>The proper "stupid" is more points</div>
-              <div>Proper "pendulum" can be more full of blood resurrection</div>
+              <div>Stitching together street culture and fashion</div>
+              <div>Bring back the coolest street sense of the Force.</div>
             </div>
             <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
               <div>Dragon lady of the east</div>
               <img src={Dragon} alt="" />
-              <div>The proper "stupid" is more points</div>
-              <div>Proper "pendulum" can be more full of blood resurrection</div>
+              <div>The costume is a fusion of Cybernew</div>
+              <div>Chinese style and wasteland mechanical style</div>
             </div>
             <div onClick={() => toUrl('/fashion')} class={[style.item, 'img-hover']}>
               <div>Workplace moment</div>
               <img src={Butterflies} alt="" />
-              <div>The proper "stupid" is more points</div>
-              <div>Proper "pendulum" can be more full of blood resurrection</div>
+              <div>Combining futuristic and bionic elements</div>
+              <div>The beauty of reopening the universe.</div>
             </div>
           </div>
           <div class={style.coself}>

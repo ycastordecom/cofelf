@@ -7,7 +7,7 @@
  * @LastEditors: dekun lu
  * @LastEditTime: 2023-03-01 17:25:25
  */
-
+import cart1 from '@/assets/image/card-1-1200x380px.png';
 import { defineComponent, onMounted } from 'vue';
 import style from './index.module.less';
 import coself from '@/assets/image/metavers-1150x140px.png';
@@ -15,12 +15,10 @@ import i150260px from '@/assets/image/110x220px.png';
 import i110x220px from '@/assets/image/110x220px (7).png';
 import i110x220px2 from '@/assets/image/110x220px (1).png';
 import i110x220px3 from '@/assets/image/110x220px (2).png';
-import i110x220px4 from '@/assets/image/110x220px (4).png';
 import i110x220px5 from '@/assets/image/110x220px (5).png';
 import i110x220px6 from '@/assets/image/110x220px (6).png';
 import i110x220px36 from '@/assets/image/110x220px (3).png';
 import i538x1077px from '@/assets/image/538x1077px.png';
-import i540x760px from '@/assets/image/540x760px.png';
 import logo from '@/assets/image/logo-220x60px.png';
 import i65x65px from '@/assets/image/65x65px.png';
 import i386x170px from '@/assets/image/386x170px (1).png';
@@ -33,8 +31,16 @@ import i234x176px2 from '@/assets/image/234x176px (2).png';
 import i234x176px3 from '@/assets/image/234x176px (3).png';
 import i234x176px4 from '@/assets/image/234x176px (4).png';
 import i299x364px from '@/assets/image/299x364px.png';
-import aaaa from '@/assets/image/aaaa.png';
-import bbbb from '@/assets/image/bbbb.png';
+import cart from '@/assets/image/coself/items/cart.png';
+import gile from '@/assets/image/coself/items/gile.png';
+import police from '@/assets/image/coself/items/police.png';
+import rich from '@/assets/image/coself/items/rich.png';
+import steave from '@/assets/image/coself/items/steave.png';
+import tea from '@/assets/image/coself/items/tea.png';
+import work from '@/assets/image/coself/items/work.png';
+import coself1 from '@/assets/image/coself/coself1.png';
+//@ts-ignore
+import coselfVideo from '@/assets/video/coself.mp4';
 import { ref } from 'vue';
 export default defineComponent({
   name: 'Series',
@@ -43,7 +49,6 @@ export default defineComponent({
     const imageBase = ref(i538x1077px);
     const imageClick = (index: number, image: any) => {
       imageActive.value = index;
-
       imageBase.value = image;
     };
 
@@ -74,18 +79,15 @@ export default defineComponent({
               <h2>METAVERS</h2>
               <p>
                 <p>
-                  COSELF dimensional show represents the never-ending show, the never-ending pursuit and expression of beauty, is thousands of women show beauty and expression of beauty stage,
-                  staggered, transformed, diversified and embrace different. COSELF dimensional show series is a new expression of paying tribute to future diversity, embracing future aesthetic trends
-                  and exploring virtual fashion.
+                  With the coming of spring, everything revives again. With one click, a new metaverse breaks out of the time and space staggered and disordered in 2023, where emerging digital fashion collides, to highlight new aesthetic fashion and a pioneering attitude. On February 17-21, COSELF, a virtual-real symbiotic IP brand of WEB3.0, will present their new seasonal “COSELF Metaverse Digital High Fashion Collection Show” on the official schedule for London Fashion Week February 2023.
                 </p>
                 <p>
-                  When it comes to the future fashion imagination, BUZHIWU believes that the future fashion is more inclined to "echo" the real emotional desire of users, and on the basis of
-                  sustainable, it will pursue more diversity and independence. Users will feel and experience the most authentic expression of happiness and emotions. "A good brand is one that can
-                  build a long-term relationship and emotional bond between the product and the user". In digital fashion, innovation and breakthrough, breaking and reshaping
+                  “COSELF Metaverse Digital High Fashion Collection Show” is created by BUZHIWU, a trending artist, creator across media & curator, who focuses on virtual fashion, aesthetic output, and new trend art. According to BUZHIWU, the collection is the visual extension of virtual-real fashion items from the COSELF Metaverse Designer Toy Collection Show, which adheres to the idea of developing sustainable fashion to “inherit classics and show respect for the future”, and finds inspiration from surreal futurism and a trendy street style to endow virtual fashion with more dynamic features by adopting brand-new bold color schemes and design.
                 </p>
               </p>
             </div>
           </div>
+
           <div class={style.box}>
             <div>
               <h1>Mystery box</h1>
@@ -93,28 +95,68 @@ export default defineComponent({
               <div>
                 <div>
                   <div>
-                    <img onClick={() => imageClick(0, i538x1077px)} class={imageActive.value === 0 ? 'img-click' : ''} src={i150260px} alt="" />
+                    <img onClick={() => imageClick(0, cart)} class={imageActive.value === 0 ? 'img-click' : ''} src={i150260px} alt="" />
                   </div>
-                  <img onClick={() => imageClick(1, aaaa)} class={imageActive.value === 1 ? 'img-click' : ''} src={i110x220px} alt="" />
-                  <img onClick={() => imageClick(2, bbbb)} class={imageActive.value === 2 ? 'img-click' : ''} src={i110x220px2} alt="" />
-                  <img onClick={() => imageClick(3, bbbb)} class={imageActive.value === 3 ? 'img-click' : ''} src={i110x220px3} alt="" />
-                  <img onClick={() => imageClick(4, bbbb)} class={imageActive.value === 4 ? 'img-click' : ''} src={i110x220px4} alt="" />
-                  <img onClick={() => imageClick(5, bbbb)} class={imageActive.value === 5 ? 'img-click' : ''} src={i110x220px5} alt="" />
-                  <img onClick={() => imageClick(6, bbbb)} class={imageActive.value === 6 ? 'img-click' : ''} src={i110x220px6} alt="" />
-                  <img onClick={() => imageClick(7, bbbb)} class={imageActive.value === 7 ? 'img-click' : ''} src={i110x220px36} alt="" />
+                  <img onClick={() => imageClick(1, gile)} class={imageActive.value === 1 ? 'img-click' : ''} src={i110x220px} alt="" />
+                  <img onClick={() => imageClick(2, work)} class={imageActive.value === 2 ? 'img-click' : ''} src={i110x220px2} alt="" />
+                  <img onClick={() => imageClick(3, rich)} class={imageActive.value === 3 ? 'img-click' : ''} src={i110x220px3} alt="" />
+                  <img onClick={() => imageClick(4, steave)} class={imageActive.value === 4 ? 'img-click' : ''} src={i110x220px5} alt="" />
+                  <img onClick={() => imageClick(6, police)} class={imageActive.value === 6 ? 'img-click' : ''} src={i110x220px6} alt="" />
+                  <img onClick={() => imageClick(7, tea)} class={imageActive.value === 7 ? 'img-click' : ''} src={i110x220px36} alt="" />
                 </div>
                 <img class="scroll" src={imageBase.value} alt="" />
               </div>
             </div>
           </div>
           <div class={style.news}>
-            <div class="img-hover">
-              <img src={i540x760px} alt="" />
-              <div>Quintessence of Chinese high tide play art</div>
+            <div>
+              Made In China | Introducing the MUA National Fashion Models
             </div>
-            <div class="img-hover">
-              <iframe class="img-hover" scrolling="no" src="http://39.105.140.152:81/" frameborder="0" margin-top="1px"></iframe>
-              <div>展讯</div>
+            {/*<div class="img-hover">*/}
+            {/*  <img src={i540x760px} alt="" />*/}
+            {/*  <div>Quintessence of Chinese high tide play art</div>*/}
+            {/*</div>*/}
+            {/*<div class="img-hover">*/}
+            {/*  <iframe class="img-hover" scrolling="no" src="http://39.105.140.152:81/" frameborder="0" margin-top="1px"></iframe>*/}
+            {/*  <div>展讯</div>*/}
+            {/*</div>*/}
+            <div>
+              <div>
+                <video controls>
+                  <source src={coselfVideo} type="audio/mpeg" />
+                </video>
+
+              </div>
+              <div onClick={()=>window.location.href='https://mp.weixin.qq.com/s/2E4InmOdEAorCLrirkA14A'}>
+                <img src={coself1}/>
+                <span>
+                Every woman is a free, confident individual as beautiful as a phoenix. Their power co-exists with their tenderness, blooming with rays unique to women.
+              </span>
+              </div>
+            </div>
+          </div>
+          <div
+              class={style.fall}
+          >
+            <div>Resect the Future and Inherit Classics</div>
+            <div>
+              <img src={cart1}/>
+              <div>
+                <p>
+                  Resect the Future and Inherit Classics
+                </p>
+                <p>
+                  Reshape and pay homage to classic national treasures and tell the stunning
+                  beauty of
+                  mountains, rivers and the nation with blind boxes.
+                </p>
+                <p>
+                  The upcoming series comprises 6 models.
+                </p>
+                <span>
+                                    *Only one model is currently presented on the webpage.
+                                </span>
+              </div>
             </div>
           </div>
           <div class={style.joint}>

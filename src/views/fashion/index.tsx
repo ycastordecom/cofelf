@@ -11,11 +11,10 @@
 import { defineComponent, onMounted, ref } from 'vue';
 import style from './index.module.less';
 import digital from '@/assets/image/Digital tide toy.png';
-import i273x512px from '@/assets/image/273x512px.png';
-import i250x340px1 from '@/assets/image/250x340px (1).png';
-import i250x340pxw from '@/assets/image/250x340px (2).png';
-import i2250x340px1 from '@/assets/image/250x340px (3).png';
-import i2250x340px12 from '@/assets/image/250x340px (4).png';
+// import i250x340px1 from '@/assets/image/250x340px (1).png';
+// import i250x340pxw from '@/assets/image/250x340px (2).png';
+// import i2250x340px1 from '@/assets/image/250x340px (3).png';
+// import i2250x340px12 from '@/assets/image/250x340px (4).png';
 import BUT1448x675px from '@/assets/image/BUT-1-448x675px.png';
 import BUT2407x148pxfrom from '@/assets/image/BUT-2-407x148px.png';
 import BUT3407x94px from '@/assets/image/BUT-3-407x94px.png';
@@ -34,17 +33,89 @@ import i262x324px3 from '@/assets/image/262x324px-3.png';
 import i262x324px4 from '@/assets/image/262x324px-4.png';
 import LIPS1591x365px from '@/assets/image/LIPS-1-591x365px.png';
 
-import BUT1591x365px2 from '@/assets/image/BLUEANDWHITEPOCELAIN273x512px.png';
-import SKYLAND273x512px from '@/assets/image/SKYLAND273x512px.png';
-import NATIONAL273x512px from '@/assets/image/NATIONALMAI273x512px.png';
+// import BUT1591x365px2 from '@/assets/image/BLUEANDWHITEPOCELAIN273x512px.png';
+// import SKYLAND273x512px from '@/assets/image/SKYLAND273x512px.png';
+// import NATIONAL273x512px from '@/assets/image/NATIONALMAI273x512px.png';
+import black from '@/assets/image/future/goblin/black.gif';
+import blackthum from '@/assets/image/future/goblin/blackthum.png';
+import green from '@/assets/image/future/goblin/green.gif';
+import greenthum from '@/assets/image/future/goblin/greenthum.png';
+import light from '@/assets/image/future/goblin/light.gif';
+import lightthum from '@/assets/image/future/goblin/lightthum.png';
+import pinBlue from '@/assets/image/future/goblin/pinBlue.gif';
+import pinBluethum from '@/assets/image/future/goblin/pinBluethum.png';
+import redYellow from '@/assets/image/future/goblin/redYellow.gif';
+import redYellowthum from '@/assets/image/future/goblin/redYellowthum.png';
+import white from '@/assets/image/future/goblin/white.gif';
+import whitethum from '@/assets/image/future/goblin/whitethum.png';
+import whiteBlue from '@/assets/image/future/goblin/whiteBlue.gif';
+import whiteBluethum from '@/assets/image/future/goblin/whiteBluethum.png';
+import whiteSky from '@/assets/image/future/goblin/whiteSkyBlue.gif';
+import whiteSkythum from '@/assets/image/future/goblin/whiteSkyBluethum.png';
+const data = [
+
+  {
+    thum:greenthum ,
+    baseImage: green,
+    title: 'National Girl: Vitality',
+    content:'Ethnic Girl, a girl with a distinct personality and combat power, is born with the mission of safeguarding her nation. As months and years elapse, she has achieved many war exploits but her face shows no traces of age. She is affectionately known as the “National Girl”. '
+  },
+
+  {
+    thum: pinBluethum,
+    baseImage: pinBlue,
+    title: 'Goddess of Romance',
+    content:'With multiple personalities, the Goddess of Romance is a mystical and distant being yet with a touch of innocence and a gentle and delicate heart. Having witnessed the romantic relationships of humans, she gradually understands what true love is and stops being distant from other people. Instead, she starts to show her girly side to the outside world.  '
+  },
+  {
+    thum: redYellowthum,
+    baseImage: redYellow,
+    title: 'Rose of London',
+    content:'With outstanding vitality and creativity, the Rose of London is renowned as a “little genius” thanks to her exceptional imagination and hands-on skills developed since childhood. Apart from these qualities, she now has a greater enthusiasm towards life and work, giving an impression of constant positive energy and passion in life.”. '
+  },
+  {
+    thum: whitethum,
+    baseImage: white,
+    title: 'Geometric Futuristic Lady',
+    content:'Adopting an undertone of cement white surrounded by scorching colors like fire and golden, the Geometric Futuristic Girl conveys not only purity, fearlessness and otherworldliness but also a great innate power. Geometric Futuristic Lady looks like a little girl who just descends into the world without much understanding of worldly affairs. Since her descent into the world, she has been experiencing all worldly phenomena and beautiful things with high curiosity and a spirit of exploration. During this period, she has experienced a lot, including both joyful moments of reunions and sad departures. Nevertheless, these experiences help her gradually develop great inner strength. Regardless of adversity or favorable conditions, she always holds a sense of pride and unruliness, refusing to be defined by any labels. Along the path of her growth, she has constantly held herself true to her original dreams and pure power, bearing infinite possibilities about the future. '
+  },
+  {
+    thum: whiteBluethum,
+    baseImage: whiteBlue,
+    title: 'The Blue and White Porcelain Doll',
+    content:'The Blue and White Porcelain Doll is a classic beauty who likes blue and white colors. Her gorgeous and dignified appearance seems to have the ability to strike a chord in your heart. Aside from a faint impression of aesthetics '
+  },
+  {
+    thum: whiteSkythum,
+    baseImage: whiteSky,
+    title: 'Sky Realm',
+    content:'As the avatar of freedom, Sky Realm aspires to an unrestrained and free life. She likes roaming in wind, sun and forests...With an unlimited extension of her imagination, she has a dreamy expectation about the future. With her presence, you will be able to perceive the beauty of all things in a state of self-possessiveness.'
+  },
+  {
+    thum: blackthum,
+    baseImage: black,
+    title: 'Future Elf',
+    content:'In an ever-changing journey towards the future, you know,' +
+        ' the road will open up, the flowers will bloom and even the cold night will give way to warm sunlight in' +
+        ' the morning. Try to keep your passion, as you will make exceptional accomplishments' +
+        '. The ensuing chapters of the future will be yours, in your imagination and your hands.”. '
+  },
+  {
+    thum: lightthum,
+    baseImage: light,
+    title: 'Universe Butterfly',
+    content:'Whether you are bathed by the shimmering light of the universe or the starlight in the world, your very presence in the vast space and time of the universe, in itself, is a matter of romance and the entire universe shines brightly because of your goodness. The universe provides you with a starry night. But it is you that constitutes the brilliant Milky Way and it is because of you that the universe lasts in eternity. '
+  },
+]
 
 export default defineComponent({
   name: 'Fashion',
   setup() {
+    const txt = [data[0].title];
+    let content = data[0].content;
     onMounted(() => {
       //打字机
       const text = document.querySelector('.text') as HTMLElement;
-      const txt = ['NATIONAL MAIDEN'];
       let index = 0;
       let xiaBiao = 0;
       let huan = true;
@@ -88,11 +159,12 @@ export default defineComponent({
 
 
     //切换
-    const image = ref(i273x512px)
-    const change = (baseImage: any) => {
-      image.value = baseImage
+    const image = ref(data[0].baseImage)
+    const change = (item: any) => {
+      image.value = item.baseImage
+      txt[0] = item.title
+      content = item.content
     }
-
     return () => {
       return (
         <div>
@@ -112,28 +184,19 @@ export default defineComponent({
                     <p class="text"></p>
                   </div>
                   <div class="scroll">
-                    "National Girl" is a girl with personality and fighting power. She has taken up the mission of protecting her nation since she was born. In the wasted years, she has numerous
-                    achievements, but the face can not see the traces of the years, has the appearance of not old, people affectionately called her "national girl".
+                    {content}
                   </div>
                 </div>
               </div>
               <div>
-                <div onClick={() => change(NATIONAL273x512px)} class="img-hover">
-                  <img src={i250x340px1} alt="" />
-                  <div>Geometric mirohime</div>
-                </div>
-                <div onClick={() => change(BUT1591x365px2)} class="img-hover">
-                  <img src={i250x340pxw} alt="" />
-                  <div>Blue and white porcelain</div>
-                </div>
-                <div onClick={() => change(SKYLAND273x512px)} class="img-hover">
-                  <img src={i2250x340px1} alt="" />
-                  <div>Sky land</div>
-                </div>
-                <div onClick={() => change(i273x512px)} class="img-hover">
-                  <img src={i2250x340px12} alt="" />
-                  <div>National maiden</div>
-                </div>
+                {data.map((item) => {
+                    return (
+                        <div onClick={()=>change(item)} class="img-hover">
+                            <img src={item.thum} alt="" />
+                          <div>{item.title}</div>
+                        </div>
+                    )
+                })}
               </div>
               <h2>DIGITAL FASHION</h2>
               <div>

@@ -1,17 +1,22 @@
 .index {
   width: 100%;
   // background: url('../../assets/image/banner-887x486px.png') no-repeat;
-  background: no-repeat center top;
+ /* background: no-repeat center top;
   background-size: auto 1080px;
-  background-image: linear-gradient(to top, #17192b 0%, #17192b 10%, transparent 100%), url('../../assets/image/banner-887x486px.png');
+  background-image: linear-gradient(to top, #17192b 0%, #17192b 10%, transparent 100%), url('../../assets/image/banner-887x486px.png');*/
   background-color: #17192b;
 
   > div {
     max-width: 1200px;
     margin: 0 auto;
-
-    > div:nth-child(1) {
-      padding-top: 470px;
+    video {
+      padding-top: 30px;
+      display: block;
+      margin: 0 auto;
+      width: 1200px;
+      height: 800px;
+    }
+    > div:nth-child(2) {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -54,7 +59,7 @@
       > div:nth-child(2) {
         position: relative;
         width: 330px;
-        height: 400px;
+        height: 420px;
         border-radius: 25px;
         //小手指
         cursor: pointer;
@@ -86,60 +91,7 @@
       }
     }
 
-    .fall {
-      //小手指
-      cursor: pointer;
-      color: #fff;
-      > div:nth-child(1) {
-        margin-top: 170px;
-        font-size: 36px;
-        margin-bottom: 26px;
-        font-family: '阿里包巴惠普体MEDIUM';
-      }
 
-      > div:nth-child(2) {
-        width: 100%;
-        height: 380px;
-        background: url(../../assets/image/card-1-1200x380px.png);
-        display: flex;
-        justify-content: flex-end;
-
-        > div {
-          width: 580px;
-          text-align: center;
-          position: relative;
-
-          h2 {
-            margin-top: 40px;
-            margin-bottom: 48px;
-            font-size: 36px;
-            font-family: '阿里包巴惠普体BOLD';
-          }
-
-          p {
-            padding: 0 22px;
-            font-size: 20px;
-            font-family: '阿里包巴惠普体LIGHT';
-          }
-
-          .button {
-            margin: 0 auto;
-            width: 220px;
-            height: 48px;
-            border-radius: 48px;
-            line-height: 48px;
-            border: 1px solid #fff;
-            margin-top: 60px;
-            font-weight: bold;
-
-            &:hover {
-              background-color: #fff;
-              color: #17192b;
-            }
-          }
-        }
-      }
-    }
 
     .digtal {
       color: #fff;
@@ -148,7 +100,7 @@
         margin-bottom: 26px;
         font-family: '阿里包巴惠普体MEDIUM';
         font-size: 36px;
-        margin-top: 90px;
+        margin-top: 120px;
         margin-bottom: 26px;
       }
 
@@ -213,7 +165,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 26px;
-
+      margin-top: 106px;
       img {
         width: 22px;
         height: 80px;
@@ -241,28 +193,21 @@
         //小手指
         cursor: pointer;
         width: 380px;
-        height: 580px;
+        height: 510px;
         color: #fff;
         text-align: center;
         background-color: #212338;
         border-radius: 20px;
-
-        > div:nth-child(1) {
-          font-size: 26px;
-          font-family: '阿里包巴惠普体BOLD';
-          line-height: 58px;
-        }
 
         img {
           width: 350px;
           height: 450px;
         }
 
-        > div:nth-child(3),
-        > div:nth-child(4) {
+        > div:nth-child(2) {
           margin-top: 5px;
-          font-size: 12px;
-          font-family: '阿里包巴惠普体LIGHT';
+          font-size: 24px;
+          font-family: '阿里包巴惠普体BOLD';
         }
       }
     }

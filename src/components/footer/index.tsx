@@ -20,11 +20,12 @@ export default defineComponent({
         <div>
           <img src={logo} alt="" />
           <div>
-            <h2>Introduction to COSELF</h2>
+            <h2>What is COSELF?</h2>
             <p>
-              Beauty Fairy (alias "Beauty Fairy Universe") crossover fashion brand was officially established in 2021, created by the managing director and designer Wu Zijun BUZHI. With IP+ beauty as
-              the design concept, the brand is a virtual and real symbiotic crossover IP brand created by web3.0, which pays homage to the expression of future diversified beauty and embraces the
-              future aesthetic trend. Explore the symbiotic development of virtual fashion and reality
+              COSELF (also known as “COSELF Metaverse”) is a cross-domain trendy toy
+              brand officially established in 2021. Founded by the brand leader and designer BUZHI WU,
+              COSELF is a trendy IP brand crossing
+              over the virtual and realistic domains designed on Web 3.0 based on the concept of IP and cosmetics.
             </p>
           </div>
         </div>

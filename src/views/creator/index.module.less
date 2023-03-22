@@ -72,21 +72,42 @@ body {
       //大写
       text-transform: uppercase;
     }
-
-    > div {
-      background: url(../../assets/image/230x173px.png) no-repeat;
-      background-size: 230px 173px;
-      background-position: 50% 50%;
-      height: 173px;
-      width: 100%;
-      margin: 0 auto;
-      line-height: 173px;
+    > h3 {
+      font-size: 24px;
+      padding-top: 18px;
       text-align: center;
-      font-size: 50px;
-      font-family: 'valky-light';
+      font-weight: normal;
       //大写
       text-transform: uppercase;
     }
+
+    > div:nth-child(2) {
+      background: url(../../assets/image/230x173px.png) no-repeat;
+      background-size: auto 100%;
+      background-position: 50% 50%;
+      height: 150px;
+      width: 100%;
+      margin: 20px auto;
+      line-height: 150px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: '阿里包巴惠普体LIGHT';
+      //大写
+      text-transform: uppercase;
+    }
+    > div:nth-child(3) {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      //子元素间距
+      gap: 80px;
+      > img{
+        aspect-ratio:140/60 ;
+        width: 100px;
+      }
+    }
+
   }
 
   > div:nth-child(5) {

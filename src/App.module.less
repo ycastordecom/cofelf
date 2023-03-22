@@ -68,6 +68,7 @@ body,
 // 图片移入特效
 :global {
   .img-hover {
+    margin-top: 15px;
     &:hover {
       transform: scale(1.04);
       //时间
@@ -92,17 +93,31 @@ body,
   .text {
     display: inline-block;
     position: relative;
-
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     &::after {
       content: '';
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
       position: absolute;
       right: -10px;
       top: 5px;
       height: 50px;
       width: 3px;
+
       background-color: #fff;
       animation: san 0.5s steps(1) infinite;
     }
+  }
+  .scroll {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   @keyframes san {

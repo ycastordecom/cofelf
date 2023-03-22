@@ -41,28 +41,38 @@ body {
         background: url(../../assets//image/beijing-1200x692px.png) no-repeat rgba(0, 0, 0, 0.1);
         background-size: 100% auto;
         display: flex;
-
+        padding: 40px;
+        box-sizing: border-box;
         > img {
-          margin-left: 123px;
-          height: 512px;
+          //height: 512px;
+          //width: 273px;
+            //固定比例
+            // 273∶512
+          aspect-ratio: 640/856;
+            //图片自适应
+          height: 100%;
+          object-fit: contain;
         }
 
         > div:nth-child(2) {
           // margin-left: 165px;
           width: 668px;
-
+          margin-left: -100px;
+          margin-top: 50px;
           > div:nth-child(1) {
-            background: url(../../assets//image/668x99px.png) no-repeat;
+            background: url(../../assets//image/668x99px.png);
             background-size: 100% auto;
             height: 99px;
             display: flex;
             font-family: '阿里包巴惠普体BOLD';
             justify-content: center;
             align-items: center;
-            font-size: 40px;
+            font-size: 30px;
             //文字阴影环绕
-            padding-left: 50px;
+            padding-left: 180px;
+            padding-right: 120px;
             text-shadow: 0 0 10px #9c44ea, 0 0 5px #9c44ea;
+            overflow: hidden;
           }
 
           > div:nth-child(2) {

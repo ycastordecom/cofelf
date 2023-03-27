@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 23:34:48
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-03-01 14:49:27
+ * @LastEditTime: 2023-03-28 00:23:37
  */
 
 import {defineComponent} from 'vue';
@@ -40,10 +40,9 @@ import vedio from '@/assets/video/home.mp4'
                         </video>
                         <div>
                             <div>
-                                <div>ABOUT BUZHIWU</div>
-                                <div>MELETEE</div>
-                                <div>WOO</div>
-                                <div>THE NTH POSSIBILITY OF THE YUANTIDFIP ADDRFSS</div>
+                                <div>BUZHIWU</div>
+                                {/* <div>WOO</div> */}
+                                <div>THE Nth POSSIBILITY OF THE YUANTIDFIP ADDRFSS IP</div>
                             </div>
                             <div class="img-hover" onClick={() => toPath('https://muselink.cc/MeleterWoo')}>
                                 <img src={human} alt=""/>

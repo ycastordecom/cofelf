@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 23:36:10
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-02-17 01:10:01
+ * @LastEditTime: 2023-03-29 23:23:09
  */
 
 import { defineComponent, ref } from 'vue';
@@ -61,11 +61,19 @@ export default defineComponent({
     const toUrl = (url: string) => {
       router.push(url);
     };
+    const toPath = (path: string) => {
+      window.location.href = path;
+    };
     return () => (
       <div ref={header} class={style.header}>
         <img class={style.logo} src={logo} alt="" />
         <div>
-          <div class={style.sing}>SIGN IN</div>
+          <div class={style.sing} onClick={() => toPath('https://coself123-m.rarefy.top/#/')}>
+            MARKER
+          </div>
+          <div class={style.sing} onClick={() => toPath('https://coself123-m.rarefy.top/#/')}>
+            SIGN IN
+          </div>
           <div class={style.select}>
             <img class={style.menu} src={menu} alt="" />
             <div>

@@ -18,6 +18,8 @@
   display: flex;
 }
 .header > div .sing {
+  margin-right: 50px;
+  cursor: pointer;
   width: 220px;
   height: 44px;
   background: linear-gradient(90deg, #8c32e1 0%, #5112f1 100%);
@@ -33,10 +35,14 @@
   background: #fff;
   color: #5112f1;
 }
+.header .select {
+  cursor: pointer;
+}
 .header .select .menu {
   width: 60px;
   height: 46px;
   margin: 0 100px;
+  cursor: pointer;
 }
 .header .select > div:nth-child(2) {
   background-color: #3b3c4f;

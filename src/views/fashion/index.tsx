@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 00:34:36
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-03-28 00:54:55
+ * @LastEditTime: 2023-03-30 22:50:50
  */
 
 import { defineComponent, onMounted, ref } from 'vue';
@@ -52,6 +52,8 @@ import whiteBlue from '@/assets/image/future/goblin/whiteBlue.gif';
 import whiteBluethum from '@/assets/image/future/goblin/whiteBluethum.png';
 import whiteSky from '@/assets/image/future/goblin/whiteSkyBlue.gif';
 import whiteSkythum from '@/assets/image/future/goblin/whiteSkyBluethum.png';
+import w264x523px from '@/assets/image/WechatIMG255.png';
+import w458x665px from '@/assets/image/458x665px.png';
 const data = [
   {
     thum: greenthum,
@@ -181,7 +183,9 @@ export default defineComponent({
                 <img src={digital} alt="" />
                 <div>COSELF Dimension Show - Virtual couture series</div>
               </h1>
-              <h2>DIGITAL FASHION</h2>
+              <div>
+                <h2>DIGITAL FASHION</h2>
+              </div>
               <div>
                 <div>
                   <h3>Butterfly That Begets</h3>
@@ -245,7 +249,38 @@ export default defineComponent({
                   </div>
                 </div>
               </div>
-              <h2>FUTURE GOBLIN</h2>
+              <div>
+                <h2>Future Cosmic Genie</h2>
+                <div>
+                  <img src={w264x523px} alt="" />
+                  <div>
+                    <div>
+                      <span>Features:</span> CYBERPUNK, floating cat’s ears shaped headphones, a red leather skirt, outer translucent gradient blue pvc, toy brick model style thigh boots, headphones,
+                      transparent gradient geometric sectional overcoat
+                    </div>
+                    <div>
+                      <span>Description:</span>
+                      The garment fuses futuristic technical elements such as pixels, electrons and neon, to create an emerging stage of fusion and coexistence between a metaverse show and a real show
+                      in staggered time and space for every girl wearing the garment, witnessing the exploration of future life and feminine beauty, as well as new expectations of beauty.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2>Spotlighted Racer</h2>
+                <div>
+                  <div>
+                    Features: CYBERPUNK, floating cat’s ears shaped headphones, a red leather skirt, outer translucent gradient blue pvc, toy brick model style thigh boots, headphones, transparent
+                    gradient geometric sectional overcoat
+                  </div>
+                  <img src={w458x665px} alt="" />
+                  <div>
+                    Description: The garment fuses futuristic technical elements such as pixels, electrons and neon, to create an emerging stage of fusion and coexistence between a metaverse show and
+                    a real show in staggered time and space for every girl wearing the garment, witnessing the exploration of future life and feminine beauty, as well as new expectations of beauty.
+                  </div>
+                </div>
+              </div>
+              <h2>Future ELF</h2>
               <div>
                 <img src={image.value} alt="" />
                 <div>

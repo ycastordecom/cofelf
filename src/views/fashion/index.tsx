@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 00:34:36
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-03-30 22:50:50
+ * @LastEditTime: 2023-03-31 18:47:22
  */
 
 import { defineComponent, onMounted, ref } from 'vue';
@@ -181,7 +181,7 @@ export default defineComponent({
             <div>
               <h1>
                 <img src={digital} alt="" />
-                <div>COSELF Dimension Show - Virtual couture series</div>
+                {/* <div>COSELF Dimension Show - Virtual couture series</div> */}
               </h1>
               <div>
                 <h2>DIGITAL FASHION</h2>

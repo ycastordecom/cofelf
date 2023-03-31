@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-12 23:36:10
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-03-29 23:23:09
+ * @LastEditTime: 2023-03-31 18:58:57
  */
 
 import { defineComponent, ref } from 'vue';
@@ -69,7 +69,7 @@ export default defineComponent({
         <img class={style.logo} src={logo} alt="" />
         <div>
           <div class={style.sing} onClick={() => toPath('https://coself123-m.rarefy.top/#/')}>
-            MARKER
+            MARKET
           </div>
           <div class={style.sing} onClick={() => toPath('https://coself123-m.rarefy.top/#/')}>
             SIGN IN

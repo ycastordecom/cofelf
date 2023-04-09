@@ -5,7 +5,7 @@
  * @Email: 1364978779@qq.com
  * @Date: 2023-02-16 00:34:36
  * @LastEditors: dekun lu
- * @LastEditTime: 2023-03-31 18:47:22
+ * @LastEditTime: 2023-04-09 15:13:01
  */
 
 import { defineComponent, onMounted, ref } from 'vue';
@@ -53,7 +53,7 @@ import whiteBluethum from '@/assets/image/future/goblin/whiteBluethum.png';
 import whiteSky from '@/assets/image/future/goblin/whiteSkyBlue.gif';
 import whiteSkythum from '@/assets/image/future/goblin/whiteSkyBluethum.png';
 import w264x523px from '@/assets/image/WechatIMG255.png';
-import w458x665px from '@/assets/image/458x665px.png';
+import w458x665px from '@/assets/image/458x665px.12b8c5f5.png';
 const data = [
   {
     thum: greenthum,
